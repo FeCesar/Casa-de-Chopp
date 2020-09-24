@@ -1,0 +1,365 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-size: 100%;
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	border: none;
+	outline: none;
+}
+a {
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+img {
+	max-width: 100%;
+}
+h2 {
+	font-size: 1.5em;
+}
+p {
+	font-size: 1em;
+}
+body {
+	overflow-x: hidden;
+}
+
+/* ANIME */
+.menu-fixo{
+	position: fixed;
+	top: 0;
+	z-index: 99;
+}
+.anime {
+	opacity: 0;
+	transform: translate3d(-100px, 0,0);
+	transition: .3s;
+}
+.anime-start{
+	opacity: 1;
+	transform: translate3d(0, 0, 0);
+}
+/* HEADER */
+.social {
+	width: 100%;
+	padding: 6px 8%;
+	background: #111;
+	float: left;
+	display: inline;
+}
+.social i{
+	margin: 0 4%;
+	color: #fff;
+}
+.social i:hover{
+	color:;
+}
+.social p{
+	display: inline;
+	float: right;
+	margin: 0 4%;
+	color: #fff;
+	display: none;
+}
+.social p i{
+	color: #fff;
+	display: none;
+}
+.header {
+	width: 100%;
+	padding: 20px 8%;
+	background-color: #fff;
+	float: left;
+}
+.header img{
+	margin-top: 2%;
+}
+
+.botao_mobile {
+float: right;
+padding: 5px;
+width: 20%;
+display: inline-block;
+line-height: 7px;
+cursor: pointer;
+font-weight: bold;
+text-align:center;
+color: #FFF;
+background-color: #111;
+border-radius: 10px;
+margin-top: 3%;
+}
+.logo {
+	margin-left: 1%;
+}
+.menu {
+	display:none; 
+	width: 100%; 
+	height: 100%; 
+	position: fixed; 
+	background-color: rgba(17,17,17,17); 
+	top: 0; 
+	left: 0;
+}
+.menu ul{
+	text-align: center;
+		margin: 10% 0;
+}
+.menu li {
+	display: block;
+	font-size: 30px;
+	margin: 3% 0;
+}
+.menu a{
+	color: #fff;
+}
+.menu a:active{
+	color: #98C600;
+	transition: 0.1s;
+}
+.btn-close {
+	margin: 3% 4% 0 0;
+	float: right;
+	display: inline;
+	width: 15px;
+	height: 15px;
+}
+
+/* MAIN */
+.servicos {
+	display: block;
+	height: 600px;
+}
+.servico {
+	width: 100%;  
+	padding: 0 8%;
+	text-align: left;  
+	display: block;
+}
+.servico img {
+	border-radius: 7px 7px 0 0;
+	margin-left: 7%;
+	display: block;
+}
+.inner {
+	padding: 7%;
+}
+.inner h2 {
+	font-size: 1.5em; 
+	color: #130400; 
+	font-weight: 700;
+	text-align: center;
+}
+.inner h4 {
+	font-size: 1.2em; 
+	color: #130400; 
+	margin-top: 2%; 
+	text-align: center;
+}
+.inner p {
+	margin-top: 6%; 
+	color: #130400; 
+	line-height: 1.5em;
+	text-align: center;
+}
+
+
+/* SOBRE */
+.about {
+	display: none;
+}
+.btn-mais{
+	display: none;
+}
+
+/* FOOTER */
+.article{
+	background-color: #111;
+}
+.article p{
+	padding: 5%;
+	color: #fff;
+	text-align: center;
+	margin-top: 420px;
+	display: block;
+	font-weight: bold
+}
+.article iframe{
+	display: block;
+	float: right;
+	width: 100%;
+	height: 250px;
+
+}
+
+.footer{
+	background-color: #111;	
+	padding: 0 8%;
+}
+.footer p{
+	padding: 15%;
+	text-align: center;
+	font-weight: normal;
+	color: #fff;
+}
+.footer spam{
+	font-weight: bold;
+}
+/* DEVICES */
+
+
+/* DEVICE 480 */
+@media (min-width: 480px) {
+	.servico {
+		width: 49%; 
+		float: left; 
+		margin-right: 2%;
+	}
+	.servico:nth-child(2){
+		margin-right: 0;
+	}
+	.about {
+		background: #E63232;
+		display: block;
+		width: 100%; 
+		float: left; 
+		margin-right: 2%;
+		padding: 0 8%;
+	}
+	.about img{
+		width: 49%;
+	border-radius: 7px 7px 0 0;
+	margin-left: 1%;
+	display: inline-block;
+	margin-top: 6%;
+
+	}
+	.about p{
+		margin-top: 7%;
+		width: 49%;
+		display: inline-block;
+		float: right;
+		text-align: center;
+		font-size: 15px
+	}
+	.about spam{
+		font-weight: 900;
+		display: block;
+		font-size: 20px;
+	}
+	.btn-mais{
+		display: block;
+		padding: 5px;
+		background-color: #000;
+		color: #fff;
+		border-radius: 10px;
+		margin-top: 5%;
+		width: 40%;
+		margin-left: 30%;
+		margin-bottom: 2%;
+	}
+	.btn-mais:hover{
+		background-color: #fff;
+		transition: 0.2s;
+		color: #000;
+	}
+	.btn-mais:hover{
+		background-color: #fff;
+		transition: 0.2s;
+		color: #000;
+	}
+	.article p{
+		margin-top: 220px;
+	}
+}
+
+/* DEVICE 640 */
+
+@media (min-width: 640px) {
+	.about img{
+		width: 35%;
+	}
+	.servico img{
+		margin-left: 1%;
+	}
+	.footer p{
+		padding: 2% 20%;
+	}
+}
+@media (min-width: 768px) {
+	.about img{
+		margin-top: 3%;
+	}
+	.article p{
+		margin-top: 250px;
+	}
+}
+@media (min-width: 1024px) {
+	.about img{
+		margin-top: 1%;
+	}
+	.menu ul{
+		text-align: left;
+		margin: 0;
+	}
+	.botao_mobile {
+		display: none;
+	}
+	.btn-close {
+		display: none;
+	}
+	.menu {
+		width: auto;
+		float: right; 
+		display: block !important; 
+		position: static;
+		background: #fff;
+		margin-top: 4%;
+	}
+
+	.menu li{
+		display: inline-block;
+		font-size: 18px;
+	}
+	.menu a{
+		color: #fff;
+		background-color: #111;
+		padding: 10px;
+		border-radius: 10px;
+		margin: 0 10px;
+	}
+	.menu a:hover{
+		color: #111;
+		background-color: #fff;
+		transition: 0.2s;
+	}
+	.servico img{
+		margin-left: 13%;
+	}
+	.about img{
+		width: 30%;
+		margin-left: 3.5%;
+	}
+	.article p{
+		margin-top: 270px;
+	}
+}
+
+@media (min-width: 1366px) {
+	.servico img{
+		margin-left: 23%;
+	}
+	.about img{
+		width: 25%;
+		margin-left: 6%;
+	}
+	.article p{
+		margin-top: 290px;
+		padding: 3%;
+	}
+}
+
+
